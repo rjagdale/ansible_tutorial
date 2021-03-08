@@ -1,0 +1,8 @@
+---
+- hosts: all
+  tasks: 
+  - name: "Install httpd package"
+    yum:
+      name: httpd-2.4.10
+      state: latest
+     
