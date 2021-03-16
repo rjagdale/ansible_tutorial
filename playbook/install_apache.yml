@@ -3,6 +3,8 @@
   tasks: 
   - name: "Install httpd package"
     yum:
-      name: httpd-2.4.10
+      name:
+        - "{{ apache_package }}"
+        - "{{ elinks_package }}"
       state: latest
      
